@@ -1,0 +1,5 @@
+
+El comando git init -b <nombre> se utiliza para inicializar un nuevo
+repositorio Git con una rama (branch) predeterminada especificada.
+Esta opción es útil si deseas crear un repositorio Git con una rama
+diferente a la rama predeterminada, que normalmente es master.
