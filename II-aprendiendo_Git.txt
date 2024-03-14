@@ -1,0 +1,6 @@
+El comando -> git checkout <- es muy versátil en Git que se utiliza para
+cambiar entre ramas, restaurar archivos, crear nuevas ramas y más.
+Su función principal es actualizar el estado del directorio de
+trabajo y del área de preparación para reflejar el estado de una
+rama específica o un punto de confirmación (commit) en el historial
+del repositorio.|

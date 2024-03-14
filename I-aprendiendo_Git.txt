@@ -1,5 +1,76 @@
 
-El comando git init -b <nombre> se utiliza para inicializar un nuevo
+En resumen, -> git init <- es el primer paso para comenzar a utilizar Git en un
+proyecto existente, ya que establece el control de versiones en ese directorio
+y permite que Git realice un seguimiento de los cambios en los archivos.
+
+
+El comando -> git init -q  <- realiza la misma función que git init, es decir,
+inicializa un nuevo repositorio Git en un directorio existente. La
+diferencia es que la opción -q (o --quiet) se utiliza para realizar la
+inicialización en modo silencioso o tranquilo, lo que significa que Git
+no mostrará mensajes o información adicional durante la inicialización
+del repositorio.
+
+
+El comando -> git init -b <nombre> <- se utiliza para inicializar un nuevo
 repositorio Git con una rama (branch) predeterminada especificada.
 Esta opción es útil si deseas crear un repositorio Git con una rama
 diferente a la rama predeterminada, que normalmente es master.
+
+
+El comando -> git add <- es el paso previo necesario para que Git registre los
+cambios de un archivo en el próximo commit.
+
+git add aprendiendo_Git.txt agrega el archivo archivo.txt al área de preparación.
+git add . agrega todos los cambios en el directorio de trabajo al área de preparación
+
+
+El comando -> git commit <- es utilizado en Git para confirmar los cambios realizados
+en los archivos que se encuentran en el área de preparación (staging area). Un
+commit en Git es una acción que guarda los cambios realizados en el repositorio
+en un punto determinado en el tiempo, creando una nueva instantánea (snapshot) de
+los archivos en ese momento.
+
+El comando git commit -m "<mensaje>" es una forma abreviada de realizar un commit
+en Git con un mensaje descriptivo directamente desde la línea de comandos
+
+  -Ejemplo: git commit -m "Primeros pasos en git - github"
+
+
+El comando -> git remote add <nombre_remoto> <url_remoto> <- es utilizado en Git para
+agregar un nuevo repositorio remoto.
+
+Este comando es entregado por 'github' al crear el repositorio.
+
+ -git remote add origin https://github.com/RodrigoHC87/Aprendiendo-git-github.git
+
+
+El comando -> git push <- es utilizado en Git para enviar los commits locales de una rama
+específica a un repositorio remoto. En otras palabras, este comando se utiliza para
+sincronizar los cambios locales con el repositorio remoto asociado.
+
+La primera vez que usamos el comando 'git push' la terminal nos arroja un
+resultado que deberemos copiar y usar por unica vez.
+
+ -Ejemplo: git push --set-upstream origin gato
+
+
+El comando -> git pull <- es utilizado en Git para recuperar los cambios desde un repositorio
+remoto y fusionarlos automáticamente con la rama actual del repositorio local. Es básicamente
+una combinación de dos comandos: git fetch, que descarga los cambios del repositorio remoto,
+y git merge, que fusiona esos cambios en la rama local
+
+
+El comando -> git branch <- en Git se utiliza para listar, crear o eliminar ramas en un repositorio.
+Sin ninguna opción adicional, git branch simplemente lista todas las ramas en el repositorio local y
+marca con un asterisco (*) la rama en la que te encuentras actualmente.
+
+El comando -> git branch nueva_rama <- Esto creará una nueva rama llamada 'nueva_rama'
+
+Algunas opciones comunes son:
+
+    -a  Muestra todas las ramas locales y remotas.
+    -d <nombre_rama>: Elimina la rama especificada.
+    -m <nombre_viejo> <nombre_nuevo>: Cambia el nombre de una rama.
+    -b <nueva_rama>: Esto creará una nueva rama llamada nueva_rama y cambiará a ella inmediatamente.
+
