@@ -1,6 +1,27 @@
+El comando -> git branch <- en Git se utiliza para listar, crear o eliminar ramas en un repositorio.
+Sin ninguna opción adicional, git branch simplemente lista todas las ramas en el repositorio local y
+marca con un asterisco (*) la rama en la que te encuentras actualmente.
+
+El comando -> git branch nueva_rama <- Esto creará una nueva rama llamada 'nueva_rama'
+
+Algunas opciones comunes son:
+
+    -a  Muestra todas las ramas locales y remotas.
+    -d <nombre_rama>: Elimina la rama especificada.
+    -m <nombre_viejo> <nombre_nuevo>: Cambia el nombre de una rama.
+    -b <nueva_rama>: Esto creará una nueva rama llamada nueva_rama y cambiará a ella inmediatamente.
+
+
 El comando -> git checkout <- es muy versátil en Git que se utiliza para
 cambiar entre ramas, restaurar archivos, crear nuevas ramas y más.
 Su función principal es actualizar el estado del directorio de
 trabajo y del área de preparación para reflejar el estado de una
 rama específica o un punto de confirmación (commit) en el historial
-del repositorio.|
+del repositorio.
+
+
+El comando -> git merge <- es utilizado en Git para combinar los cambios
+de una rama en otra. Cuando ejecutas git merge, Git fusionará los
+cambios de una rama en la rama actual, creando un nuevo commit que
+combina los cambios de ambas ramas
+

@@ -61,16 +61,5 @@ una combinación de dos comandos: git fetch, que descarga los cambios del reposi
 y git merge, que fusiona esos cambios en la rama local
 
 
-El comando -> git branch <- en Git se utiliza para listar, crear o eliminar ramas en un repositorio.
-Sin ninguna opción adicional, git branch simplemente lista todas las ramas en el repositorio local y
-marca con un asterisco (*) la rama en la que te encuentras actualmente.
 
-El comando -> git branch nueva_rama <- Esto creará una nueva rama llamada 'nueva_rama'
-
-Algunas opciones comunes son:
-
-    -a  Muestra todas las ramas locales y remotas.
-    -d <nombre_rama>: Elimina la rama especificada.
-    -m <nombre_viejo> <nombre_nuevo>: Cambia el nombre de una rama.
-    -b <nueva_rama>: Esto creará una nueva rama llamada nueva_rama y cambiará a ella inmediatamente.
 
